@@ -1,0 +1,16 @@
+# datasets
+data/
+
+# models
+*.pkl
+
+# embeddings
+*.bin
+*.vec
+
+# notebooks checkpoints
+.ipynb_checkpoints/
+
+# python
+__pycache__/
+*.pyc
