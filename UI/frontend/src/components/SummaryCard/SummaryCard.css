@@ -1,0 +1,27 @@
+.summary-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 24px;
+  flex: 1;
+  min-width: 130px;
+}
+
+.summary-card__label {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--subtext);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.summary-card__value {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.summary-card__value--positive { color: var(--pos); }
+.summary-card__value--negative { color: var(--neg); }
+.summary-card__value--neutral  { color: var(--neutral); }

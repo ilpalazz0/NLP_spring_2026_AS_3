@@ -1,0 +1,94 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  z-index: 100;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px 0 24px;
+  margin-bottom: 8px;
+}
+
+.navbar__brand-icon {
+  font-size: 22px;
+  color: var(--accent);
+}
+
+.navbar__brand-text {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.5px;
+}
+
+.navbar__divider {
+  height: 1px;
+  background: var(--border);
+  margin: 16px 24px;
+}
+
+.navbar__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0 12px;
+  flex: 1;
+}
+
+.navbar__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--neutral);
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.15s;
+}
+
+.navbar__item:hover {
+  background: rgba(0, 102, 255, 0.06);
+  color: var(--accent);
+}
+
+.navbar__item--active {
+  background: rgba(0, 102, 255, 0.08);
+  color: var(--accent);
+}
+
+.navbar__item-icon {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.navbar__item-label {
+  font-family: var(--sans);
+}
+
+.navbar__footer {
+  padding: 0 24px;
+  margin-top: 8px;
+}
+
+.navbar__footer-text {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--subtext);
+  letter-spacing: 2px;
+}

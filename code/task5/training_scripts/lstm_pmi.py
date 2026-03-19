@@ -11,7 +11,7 @@ from torch.nn.utils.rnn import pad_sequence
 
 # Config
 DATA_PATH = "../../data/Sentiment/dataset.csv"
-SAMPLE_SIZE = 5000
+SAMPLE_SIZE = 10000
 BATCH_SIZE = 32
 EPOCHS = 5
 HIDDEN_SIZE = 32

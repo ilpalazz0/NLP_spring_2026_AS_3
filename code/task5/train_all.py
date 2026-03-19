@@ -5,21 +5,21 @@ sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 import subprocess
 
 TRAINING_SCRIPTS = [
-    #"training_scripts.rnn_count",
-    #"training_scripts.rnn_tfidf",
-    #"training_scripts.rnn_pmi",
-    "training_scripts.rnn_word2vec",
-    "training_scripts.rnn_glove",
-    #"training_scripts.birnn_count",
-    #"training_scripts.birnn_tfidf",
-    #"training_scripts.birnn_pmi",
+#     "training_scripts.rnn_count",
+#     "training_scripts.rnn_tfidf",
+#     "training_scripts.rnn_pmi",
+#     "training_scripts.rnn_word2vec",
+     "training_scripts.rnn_glove",
+#     "training_scripts.birnn_count",
+#    "training_scripts.birnn_tfidf",
+#     "training_scripts.birnn_pmi",
     "training_scripts.birnn_word2vec",
     "training_scripts.birnn_glove",
-    #"training_scripts.lstm_count",
-    #"training_scripts.lstm_tfidf",
-    #"training_scripts.lstm_pmi",
-    #"training_scripts.lstm_word2vec",
-    #"training_scripts.lstm_glove",
+#    "training_scripts.lstm_count",
+#     "training_scripts.lstm_tfidf",
+#     "training_scripts.lstm_pmi",
+     "training_scripts.lstm_word2vec",
+     "training_scripts.lstm_glove",
 ]
 
 print("=" * 60)

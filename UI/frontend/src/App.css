@@ -1,0 +1,16 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.layout__content {
+  flex: 1;
+  margin-left: 220px;
+  padding: 48px 40px;
+  max-width: calc(100vw - 220px);
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+}

@@ -1,0 +1,206 @@
+.eval-page {
+  animation: fadeUp 0.4s ease forwards;
+}
+
+.page-header { margin-bottom: 32px; }
+
+.page-header__tag {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.page-header__title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.page-header__title span { color: var(--accent); }
+
+.page-header__sub {
+  margin-top: 8px;
+  color: var(--neutral);
+  font-size: 15px;
+}
+
+/* Metric toggle */
+.metric-toggle {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.metric-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--neutral);
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.metric-btn--active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+/* Eval matrix */
+.eval-matrix-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.matrix-wrap {
+  overflow-x: auto;
+}
+
+.eval-matrix {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: var(--mono);
+}
+
+.eval-matrix__corner {
+  background: var(--bg);
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 11px;
+  color: var(--subtext);
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.eval-matrix__col-header {
+  background: var(--bg);
+  padding: 14px 20px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--neutral);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.eval-matrix__row-header {
+  padding: 16px 20px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  background: var(--bg);
+  white-space: nowrap;
+}
+
+.eval-matrix__cell {
+  padding: 16px 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  transition: background 0.2s;
+}
+
+/* Legend */
+.eval-legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.legend-item--great { background: rgba(0,166,81,0.12);  color: var(--pos); }
+.legend-item--good  { background: rgba(0,102,255,0.10); color: var(--accent); }
+.legend-item--ok    { background: rgba(255,165,0,0.10); color: #d97706; }
+.legend-item--poor  { background: rgba(232,22,58,0.08); color: var(--neg); }
+
+/* Results table */
+.section-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.results-table-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--mono);
+  font-size: 13px;
+}
+
+.results-table thead th {
+  background: var(--bg);
+  padding: 12px 20px;
+  text-align: left;
+  font-size: 11px;
+  color: var(--subtext);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+}
+
+.results-table tbody td {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.results-table tbody tr:last-child td { border-bottom: none; }
+
+.results-table__best td {
+  background: rgba(0, 166, 81, 0.04);
+}
+
+.feature-tag {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  background: rgba(0, 102, 255, 0.07);
+  border: 1px solid rgba(0, 102, 255, 0.15);
+  border-radius: 4px;
+  padding: 2px 8px;
+  text-transform: uppercase;
+}
+
+.loading-msg {
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--accent);
+  padding: 40px 0;
+}
+
+.error-msg {
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--neg);
+  padding: 40px 0;
+}

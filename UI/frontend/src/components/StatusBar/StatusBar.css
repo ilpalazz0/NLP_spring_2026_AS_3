@@ -1,0 +1,23 @@
+.status-bar {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--neutral);
+  margin-bottom: 24px;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-bar--loading { color: var(--accent); }
+.status-bar--error   { color: var(--neg); }
+
+.status-bar__spinner {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--accent);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}

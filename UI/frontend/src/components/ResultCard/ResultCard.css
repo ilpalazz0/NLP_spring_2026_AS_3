@@ -1,0 +1,52 @@
+.result-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  transition: border-color 0.2s, transform 0.15s;
+  animation: fadeUp 0.3s ease forwards;
+  opacity: 0;
+}
+
+.result-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.result-card--positive { border-left: 3px solid var(--pos); }
+.result-card--negative { border-left: 3px solid var(--neg); }
+
+.result-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.result-card__model {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.result-card__feature {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--accent);
+  background: rgba(0, 229, 255, 0.08);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 4px;
+  padding: 3px 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.result-card__sentiment {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.result-card__sentiment--positive { color: var(--pos); }
+.result-card__sentiment--negative { color: var(--neg); }

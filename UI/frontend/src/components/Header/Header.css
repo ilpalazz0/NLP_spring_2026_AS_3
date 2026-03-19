@@ -1,0 +1,36 @@
+.header {
+  margin-bottom: 48px;
+}
+
+.header__tag {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  opacity: 0;
+  animation: fadeUp 0.5s ease forwards;
+}
+
+.header__title {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  opacity: 0;
+  animation: fadeUp 0.5s ease 0.1s forwards;
+}
+
+.header__title span {
+  color: var(--accent);
+}
+
+.header__subtitle {
+  margin-top: 12px;
+  color: var(--neutral);
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  animation: fadeUp 0.5s ease 0.2s forwards;
+}

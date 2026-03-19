@@ -18,7 +18,7 @@ from torch.nn.utils.rnn import pad_sequence
 # Config: choose your model
 # ==========================
 MODEL_TYPE   = "lstm"      # options: "rnn", "birnn", "lstm"
-FEATURE_TYPE = "glove"     # options: "count", "tfidf", "pmi", "word2vec", "glove"
+FEATURE_TYPE = "word2vec"     # options: "count", "tfidf", "pmi", "word2vec", "glove"
 
 SAVED_MODELS_DIR = "./saved_models/"
 MAX_SEQ_LEN      = 100     # must match training

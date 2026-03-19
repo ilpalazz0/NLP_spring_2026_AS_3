@@ -16,7 +16,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"[Device] Using: {device}")
 
 DATA_PATH        = "../../data/Sentiment/dataset.csv"
-SAMPLE_SIZE      = 5000
+SAMPLE_SIZE      = 10000
 BATCH_SIZE       = 32
 EPOCHS           = 15
 HIDDEN_SIZE      = 32
