@@ -32,22 +32,21 @@ device           = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"[Device] Using: {device}")
 
 EVAL_CONFIGS = [
-    # (model_type, feature_type, hidden_size, num_layers, input_size)
-    ("rnn",   "count",    32, 1, 1),
-    ("rnn",   "tfidf",    32, 1, 1),
-    ("rnn",   "pmi",      32, 1, 1),
-    ("rnn",   "word2vec", 64, 1, 300),
-    ("rnn",   "glove",    64, 1, 300),
-    ("birnn", "count",    32, 1, 1),
-    ("birnn", "tfidf",    32, 1, 1),
-    ("birnn", "pmi",      32, 1, 1),
-    ("birnn", "word2vec", 64, 1, 300),
-    ("birnn", "glove",    64, 1, 300),
-    ("lstm",  "count",    32, 1, 1),
-    ("lstm",  "tfidf",    32, 1, 1),
-    ("lstm",  "pmi",      32, 1, 1),
-    ("lstm",  "word2vec", 64, 1, 300),
-    ("lstm",  "glove",    64, 1, 300),
+    ('rnn',   'count',    32, 1, 1),
+    ('rnn',   'tfidf',    32, 1, 1),
+    ('rnn',   'pmi',      32, 1, 1),
+    ('rnn',   'word2vec', 128, 1, 300),
+    ('rnn',   'glove',    128, 1, 300),
+    ('birnn', 'count',    32, 1, 1),
+    ('birnn', 'tfidf',    32, 1, 1),
+    ('birnn', 'pmi',      32, 1, 1),
+    ('birnn', 'word2vec', 128, 1, 300),
+    ('birnn', 'glove',    128, 1, 300),
+    ('lstm',  'count',    32, 1, 1),
+    ('lstm',  'tfidf',    32, 1, 1),
+    ('lstm',  'pmi',      32, 1, 1),
+    ('lstm',  'word2vec', 128, 1, 300),
+    ('lstm',  'glove',    128, 1, 300),
 ]
 
 # ==========================
